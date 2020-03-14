@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcb7c3;
+}
+.titulo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid #fcff51;
+    border-radius: 30px;
+    background-color: rgb(98, 253, 232);
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(231, 176, 253, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bloque{
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 16px;
+    align-self: center;
+    justify-content: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 25px;
+    border: 5px solid #ffe91b;
+    border-radius: 15px;
+    background-color: #aaf6f8;
+    color:#182c32;
+    box-shadow: 0 4px 8px 0 rgba(231, 176, 253, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+label,input{
+    display: grid;                    
+    grid-template-columns: 50% 50%;
+    border-radius: 15px;
+}
+button,label{
+    margin-top: 10px;
+}
+button,input{
+    border: outset;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid #913bf3;
+    box-shadow: 0 4px 8px 0 rgba(231, 176, 253, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button{
+    border-radius: 15px;
+}
+
+table, th, td {
+    margin-left: 175px;
+    text-align: center;
+    border: 1px solid black;
+    
+  }
+  tr:hover {background-color: #08868f;}
+.otratabla{
+    margin-left: 0px;
+  }
