@@ -5,33 +5,33 @@ export default class Tiempo{
      * @param {number} minutos  los minutos
      */
     constructor(hora,minutos){
-        this.periodo=["am","pm"];
-        this.hora=hora;
-        this.minutos=minutos;
+        this._periodo=["am","pm"];
+        this._hora=hora;
+        this._minutos=minutos;
     }
     getFormato12(){
-        if (this.hora>=12 && this.hora<=23)
+        if (this._hora>=12 && this._hora<=23)
         {
-            if(this.hora==12)
+            if(this._hora==12)
             {
-                return (`${this.hora}:${this.minutos} ${this.periodo[1]}`);
+                return (`${this._hora}:${this._minutos} ${this._periodo[1]}`);
             }
             else{
-                var hora = this.hora-12;
+                var hora = this._hora-12;
             }
             
-            return (`${hora}:${this.minutos} ${this.periodo[1]}`);
+            return (`${hora}:${this._minutos} ${this._periodo[1]}`);
         }
-        else if (this.hora==24){
+        else if (this._hora==24){
 
-            return (`00:${this.minutos} ${this.periodo[0]}`);
+            return (`00:${this._minutos} ${this._periodo[0]}`);
         }
         else{
-            return (`${this.hora}:${this.minutos} ${this.periodo[0]}`);
+            return (`${this._hora}:${this._minutos} ${this._periodo[0]}`);
         }
     }
     getFormato24(){
-        return (`${this.hora}:${this.minutos}`)
+        return (`${this._hora}:${this._minutos}`)
     }
 }
 /*
